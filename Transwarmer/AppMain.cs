@@ -14,8 +14,8 @@ namespace Transwarmer
 		public static void Main (string[] args)
 		{
 			Initialize ();
-			//var gameScene = new GameScene();
-			var gameScene = new Splite_Scene_Test();
+			var gameScene = new GameScene();
+			//var gameScene = new Splite_Scene_Test();
 			
 			Director.Instance.RunWithScene (gameScene);
 		}
