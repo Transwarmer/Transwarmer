@@ -39,7 +39,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppMain.cs" />
-    <Compile Include="Scene\GameScene.cs" />
+    <Compile Include="Scene\GameScene\GameScene.cs" />
+    <Compile Include="Scene\GameScene\BackgroundNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -56,6 +57,7 @@
     <Folder Include="Scene\" />
     <Folder Include="Assets\background\" />
     <Folder Include="Assets\Sample\" />
+    <Folder Include="Scene\GameScene\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background\dummy_fullscreen.png" />

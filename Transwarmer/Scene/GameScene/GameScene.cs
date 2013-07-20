@@ -7,6 +7,7 @@ namespace Transwarmer
 	{
 		public GameScene ()
 		{
+			AddChild (new BackgroundNode ());
 		}
 	}
 }
