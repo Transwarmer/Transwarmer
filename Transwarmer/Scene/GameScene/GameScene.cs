@@ -23,6 +23,7 @@ namespace Transwarmer
 			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input};
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
+			AddChild (new FireNode ());
 		}
 	}
 }
