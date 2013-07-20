@@ -34,7 +34,7 @@ namespace Transwarmer
 			sprite = new SpriteB (dicTextureInfo [animationList [0]]);
 		}
 		
-		public void PlayAnimation (float interval)
+		public void PlayAnimation ()
 		{
 			ScheduleUpdate (0);
 		}
@@ -60,16 +60,25 @@ namespace Transwarmer
 			}
 			var uti = dicTextureInfo [animationList [currentTexture]];
 			sprite.SetTextureInfo (uti);
+			
+			sprite.Position = new Vector3 (Position.X, Position.Y, 0);
+			sprite.Rotation =  dir2Rot(270);
 		}
-		
+
+		public static float dir2Rot (double angle)
+		{
+			return (float)(angle / 180 * System.Math.PI);
+		}
+
 		public override void Draw ()
 		{
 			base.Draw ();
+			
 			Director.Instance.GL.Context.SetTexture (0, texture);
 
-			sbuffer.Clear();
-			sbuffer.Add(sprite);
-			sbuffer.Render();
+			sbuffer.Clear ();
+			sbuffer.Add (sprite);
+			sbuffer.Render ();
 		}
 	}
 }

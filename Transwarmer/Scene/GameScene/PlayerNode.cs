@@ -1,5 +1,6 @@
-using System;
+using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.GameEngine2D;
+
 
 namespace Transwarmer
 {
@@ -13,7 +14,14 @@ namespace Transwarmer
 			
 			AddChild(sprite);
 			
-			sprite.PlayAnimation(0.01f);
+			sprite.sprite.Center = new Sce.PlayStation.Core.Vector2(0.5f, 0.5f);
+			
+			sprite.Position = new Vector2(800, 272);
+			
+			System.Console.WriteLine( sprite.sprite.Rotation );
+			
+			
+			sprite.PlayAnimation();
 		}
 	}
 }

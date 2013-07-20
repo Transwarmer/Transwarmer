@@ -14,14 +14,13 @@ namespace Transwarmer
 				"Application/Assets/images/unified_texture.xml");
 			
 			AddChild(sprite);
-			
-			sprite.PlayAnimation(0.01f);
+			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+			sprite.PlayAnimation();
 		}
 		
 		public override void Update (float dt)
 		{
 			base.Update (dt);
-			
 		}
 	}
 }
