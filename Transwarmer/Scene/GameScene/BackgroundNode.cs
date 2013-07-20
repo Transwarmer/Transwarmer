@@ -25,7 +25,7 @@ namespace Transwarmer
 				AddChild (sprites[i]);
 			}
 			
-			
+			//Scheduler.Instance.ScheduleUpdateForTarget (this);
 		}
 		
 		private SpriteUV generateSprite (float leftX, TextureInfo textureInfo)

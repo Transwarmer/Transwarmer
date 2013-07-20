@@ -24,6 +24,7 @@ namespace Transwarmer
 			
 			cameraManager = new CameraManager (this.Camera2D);
 			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input};
+			AddChild (new StaticBackground ());
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
 			AddChild (fireNode);

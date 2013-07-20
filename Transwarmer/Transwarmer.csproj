@@ -48,6 +48,7 @@
     <Compile Include="Scene\GameScene\InputController.cs" />
     <Compile Include="Scene\GameScene\CameraManager.cs" />
     <Compile Include="Scene\GameScene\FireNode.cs" />
+    <Compile Include="Scene\GameScene\StaticBackground.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
