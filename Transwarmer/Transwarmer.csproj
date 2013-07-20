@@ -73,6 +73,7 @@
     <Content Include="Assets\images\unified_texture.xml" />
     <Content Include="Assets\images\unified_Butterfly.png" />
     <Content Include="Assets\sound\material\hono2.mp3" />
+    <Content Include="Assets\sound\flying_butterfly.mp3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
