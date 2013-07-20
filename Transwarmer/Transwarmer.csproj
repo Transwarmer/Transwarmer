@@ -79,6 +79,8 @@
     <Content Include="Assets\sound\flying_butterfly.mp3" />
     <Content Include="Assets\images\unified_fire.png" />
     <Content Include="Assets\title\title_logo.png" />
+    <Content Include="Assets\images\haikei.png" />
+    <Content Include="Assets\sound\material\hono2_trim_loop.wav" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
