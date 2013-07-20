@@ -64,6 +64,8 @@
     <Folder Include="Assets\images\" />
     <Folder Include="Scene\GameScene\" />
     <Folder Include="Scene\Splite test\" />
+    <Folder Include="Assets\sound\" />
+    <Folder Include="Assets\sound\material\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background\dummy_fullscreen.png" />
