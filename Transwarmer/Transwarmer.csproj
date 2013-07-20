@@ -54,5 +54,9 @@
     <Folder Include="Assets\worm\" />
     <Folder Include="Assets\butterfly\" />
     <Folder Include="Scene\" />
+    <Folder Include="Assets\background\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\background\dummy_fullscreen.png" />
   </ItemGroup>
 </Project>
