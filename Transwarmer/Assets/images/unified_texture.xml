@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0">
+  <info w="2048" h="2048" />
+  <textures>
+    <texture filename="image/worm0022.png" x="0" y="0" w="256" h="256" />
+    <texture filename="image/worm0021.png" x="257" y="0" w="256" h="256" />
+    <texture filename="image/worm0024.png" x="514" y="0" w="256" h="256" />
+    <texture filename="image/worm0023.png" x="0" y="257" w="256" h="256" />
+    <texture filename="image/worm0018.png" x="257" y="257" w="256" h="256" />
+    <texture filename="image/worm0017.png" x="514" y="257" w="256" h="256" />
+    <texture filename="image/worm0020.png" x="0" y="514" w="256" h="256" />
+    <texture filename="image/worm0019.png" x="257" y="514" w="256" h="256" />
+    <texture filename="image/worm0030.png" x="514" y="514" w="256" h="256" />
+    <texture filename="image/worm0029.png" x="771" y="0" w="256" h="256" />
+    <texture filename="image/worm0032.png" x="771" y="257" w="256" h="256" />
+    <texture filename="image/worm0031.png" x="771" y="514" w="256" h="256" />
+    <texture filename="image/worm0026.png" x="1028" y="0" w="256" h="256" />
+    <texture filename="image/worm0025.png" x="1028" y="257" w="256" h="256" />
+    <texture filename="image/worm0028.png" x="1028" y="514" w="256" h="256" />
+    <texture filename="image/worm0027.png" x="1285" y="0" w="256" h="256" />
+    <texture filename="image/worm0006.png" x="1285" y="257" w="256" h="256" />
+    <texture filename="image/worm0005.png" x="1285" y="514" w="256" h="256" />
+    <texture filename="image/worm0008.png" x="1542" y="0" w="256" h="256" />
+    <texture filename="image/worm0007.png" x="1542" y="257" w="256" h="256" />
+    <texture filename="image/worm0002.png" x="1542" y="514" w="256" h="256" />
+    <texture filename="image/worm0001.png" x="0" y="771" w="256" h="256" />
+    <texture filename="image/worm0004.png" x="257" y="771" w="256" h="256" />
+    <texture filename="image/worm0003.png" x="514" y="771" w="256" h="256" />
+    <texture filename="image/worm0014.png" x="771" y="771" w="256" h="256" />
+    <texture filename="image/worm0013.png" x="1028" y="771" w="256" h="256" />
+    <texture filename="image/worm0016.png" x="1285" y="771" w="256" h="256" />
+    <texture filename="image/worm0015.png" x="1542" y="771" w="256" h="256" />
+    <texture filename="image/worm0010.png" x="0" y="1028" w="256" h="256" />
+    <texture filename="image/worm0009.png" x="257" y="1028" w="256" h="256" />
+    <texture filename="image/worm0012.png" x="514" y="1028" w="256" h="256" />
+    <texture filename="image/worm0011.png" x="771" y="1028" w="256" h="256" />
+  </textures>
+</root>
