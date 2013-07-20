@@ -83,7 +83,6 @@
     <Content Include="Assets\images\unified_fire.xml" />
     <Content Include="Assets\sound\fire.mp3" />
     <Content Include="Assets\images\haikei.png" />
-    <Content Include="Assets\background\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
