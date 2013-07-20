@@ -45,11 +45,7 @@
     <Compile Include="Scene\GameScene\PlayerNode.cs" />
     <Compile Include="Scene\Splite test\SpriteAnimation.cs" />
     <Compile Include="Scene\GameScene\FPSBenchmarkNode.cs" />
-<<<<<<< HEAD
     <Compile Include="Scene\GameScene\InputController.cs" />
-=======
-    <Compile Include="Scene\GameScene\CameraManager.cs" />
->>>>>>> Stash
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -89,10 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\images\unified_Butterfly.xml" />
-<<<<<<< HEAD
     <None Include="Assets\images\unified_fire.xml" />
-=======
-    <None Include="Assets\sound\material\hono2_trim.wav" />
->>>>>>> Stash
   </ItemGroup>
 </Project>
