@@ -12,17 +12,12 @@ namespace Transwarmer
 				"Application/Assets/images/unified_texture.png", 
 				"Application/Assets/images/unified_texture.xml");
 			
-			AddChild(sprite);
-			
 			sprite.sprite.Center = new Sce.PlayStation.Core.Vector2(0.5f, 0.5f);
-			
-			sprite.Position = new Vector2(800, 272);
-			
-			System.Console.WriteLine( sprite.sprite.Rotation );
-			
-			
+			sprite.Position = new Vector2(128, 272);
+			sprite.SetRotation(90);
 			sprite.PlayAnimation();
+
+			AddChild(sprite);
 		}
 	}
 }
-

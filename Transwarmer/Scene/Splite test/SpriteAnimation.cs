@@ -62,10 +62,13 @@ namespace Transwarmer
 			sprite.SetTextureInfo (uti);
 			
 			sprite.Position = new Vector3 (Position.X, Position.Y, 0);
-			sprite.Rotation =  dir2Rot(270);
 		}
-
-		public static float dir2Rot (double angle)
+		
+		public void SetRotation(float angle)
+		{
+			sprite.Rotation = dir2Rot(angle);
+		}
+		public float dir2Rot (double angle)
 		{
 			return (float)(angle / 180 * System.Math.PI);
 		}
