@@ -55,6 +55,7 @@
     <Folder Include="Assets\butterfly\" />
     <Folder Include="Scene\" />
     <Folder Include="Assets\background\" />
+    <Folder Include="Assets\Sample\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background\dummy_fullscreen.png" />
