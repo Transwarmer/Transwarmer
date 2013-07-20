@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transwarmer", "Transwarmer\Transwarmer.csproj", "{DD2CEC5D-2770-4A80-9555-D55A27D3CC7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoLib", "..\..\..\..\Public\Documents\PSM\sample\Tutorial\TutoLib\TutoLib.csproj", "{0A29F05D-DB9F-4045-8F41-401F9FE31638}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoLib", "TutoLib\TutoLib.csproj", "{0A29F05D-DB9F-4045-8F41-401F9FE31638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

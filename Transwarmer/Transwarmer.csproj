@@ -69,7 +69,7 @@
     <Content Include="Assets\images\unified_texture.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Public\Documents\PSM\sample\Tutorial\TutoLib\TutoLib.csproj">
+    <ProjectReference Include="..\TutoLib\TutoLib.csproj">
       <Project>{0A29F05D-DB9F-4045-8F41-401F9FE31638}</Project>
       <Name>TutoLib</Name>
     </ProjectReference>
