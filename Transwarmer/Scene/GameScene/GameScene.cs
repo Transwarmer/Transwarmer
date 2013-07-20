@@ -7,6 +7,7 @@ namespace Transwarmer
 	{
 		public GameScene ()
 		{
+			this.Camera.SetViewFromViewport ();
 			AddChild (new BackgroundNode ());
 		}
 	}

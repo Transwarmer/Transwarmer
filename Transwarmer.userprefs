@@ -1,12 +1,16 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Transwarmer\AppMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Transwarmer\Scene\GameScene\BackgroundNode.cs">
     <Files>
-      <File FileName="Transwarmer\AppMain.cs" Line="17" Column="4" />
+      <File FileName="Transwarmer\AppMain.cs" Line="18" Column="4" />
+      <File FileName="Transwarmer\Scene\GameScene\BackgroundNode.cs" Line="20" Column="4" />
+      <File FileName="Transwarmer\app.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\TyounanMOTI\develop\Transwarmer_studio\Transwarmer\Scene\GameScene\BackgroundNode.cs" line="19" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
