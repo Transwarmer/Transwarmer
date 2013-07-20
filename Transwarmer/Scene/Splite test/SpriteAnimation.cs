@@ -15,69 +15,57 @@ namespace Transwarmer
 	{
 		
 		private static SpriteBuffer sbuffer;
-		public SpriteB sprite; 
-	
+		public SpriteB sprite;
 		private Texture2D texture;
 		private Dictionary<string, UnifiedTextureInfo> dicTextureInfo;
-		
-		public List<string> animationList = new List<string>();
-
-		private static System.Threading.Timer timer;
+		public List<string> animationList = new List<string> ();
 		private int currentTexture = 0;
-		
 		bool isReviece = false;
 		
 		public SpriteAnimation (string pngFilePath, string xmlFilePath)
 		{
-			texture = new Texture2D(pngFilePath, false);
-			dicTextureInfo = UnifiedTexture.GetDictionaryTextureInfo(xmlFilePath);
+			texture = new Texture2D (pngFilePath, false);
+			dicTextureInfo = UnifiedTexture.GetDictionaryTextureInfo (xmlFilePath);
 			
-			sbuffer = new SpriteBuffer( Director.Instance.GL.Context, dicTextureInfo.Count);
+			sbuffer = new SpriteBuffer (Director.Instance.GL.Context, dicTextureInfo.Count);
 			
-			animationList.AddRange( dicTextureInfo.Keys );
-			animationList.Sort();
-			sprite = new SpriteB( dicTextureInfo[animationList[0]] );
+			animationList.AddRange (dicTextureInfo.Keys);
+			animationList.Sort ();
+			sprite = new SpriteB (dicTextureInfo [animationList [0]]);
 		}
 		
-		
-		public void PlayAnimation(float interval)
+		public void PlayAnimation (float interval)
 		{
-			if( timer != null){
-				timer.Dispose();
-				timer = null; 
-			}
-			
-			timer = new System.Threading.Timer( (state) => 
-			{
-				if( !isReviece ) {
-					currentTexture ++;
-					if( ! (currentTexture < animationList.Count )){
-						isReviece = true;
-					}
-				}else{
-					currentTexture --;
-					isReviece = !( animationList.Count < 0 );
-					if( currentTexture <= 0 )
-						isReviece = false;
+			ScheduleUpdate (0);
+		}
+		
+		public void Stop ()
+		{
+			UnscheduleUpdate ();
+		}
+		
+		public override void Update (float dt)
+		{
+			base.Update (dt);
+			if (!isReviece) {
+				currentTexture ++;
+				if (! (currentTexture < animationList.Count - 1)) {
+					isReviece = true;
 				}
-
-				//Console.WriteLine(currentTexture);
-				
-				var uti = dicTextureInfo[animationList[currentTexture] ];
-				sprite.SetTextureInfo(uti);
-				
-			}, null, 0, (int)(interval * 1000));
+			} else {
+				currentTexture --;
+				isReviece = !(animationList.Count < 0);
+				if (currentTexture <= 0)
+					isReviece = false;
+			}
+			var uti = dicTextureInfo [animationList [currentTexture]];
+			sprite.SetTextureInfo (uti);
 		}
-		
-		public void Stop()
-		{
-			timer.Dispose();
-		} 
 		
 		public override void Draw ()
 		{
 			base.Draw ();
-			Director.Instance.GL.Context.SetTexture(0, texture);
+			Director.Instance.GL.Context.SetTexture (0, texture);
 
 			sbuffer.Clear();
 			sbuffer.Add(sprite);
