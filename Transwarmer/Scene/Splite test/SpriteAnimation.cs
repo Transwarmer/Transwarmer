@@ -61,7 +61,7 @@ namespace Transwarmer
 						isReviece = false;
 				}
 
-				Console.WriteLine(currentTexture);
+				//Console.WriteLine(currentTexture);
 				
 				var uti = dicTextureInfo[animationList[currentTexture] ];
 				sprite.SetTextureInfo(uti);

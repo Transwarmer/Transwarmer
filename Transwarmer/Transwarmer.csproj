@@ -44,6 +44,7 @@
     <Compile Include="Scene\Splite test\Splite Scene Test.cs" />
     <Compile Include="Scene\GameScene\PlayerNode.cs" />
     <Compile Include="Scene\Splite test\SpriteAnimation.cs" />
+    <Compile Include="Scene\GameScene\FPSBenchmarkNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

@@ -9,6 +9,9 @@ namespace Transwarmer
 		public GameScene ()
 		{
 			this.Camera.SetViewFromViewport ();
+			
+			Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
+			
 			AddChild (new BackgroundNode ());
 			AddChild (new PlayerNode ());
 		}
