@@ -41,6 +41,8 @@
     <Compile Include="AppMain.cs" />
     <Compile Include="Scene\GameScene\BackgroundNode.cs" />
     <Compile Include="Scene\GameScene\GameScene.cs" />
+    <Compile Include="Scene\Splite test\Splite Scene Test.cs" />
+    <Compile Include="Scene\Splite test\SpliteAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -59,12 +61,17 @@
     <Folder Include="Assets\Sample\" />
     <Folder Include="Assets\images\" />
     <Folder Include="Scene\GameScene\" />
+    <Folder Include="Scene\Splite test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background\dummy_fullscreen.png" />
     <Content Include="Assets\images\unified_texture.png" />
+    <Content Include="Assets\images\unified_texture.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\images\unified_texture.xml" />
+    <ProjectReference Include="..\..\..\..\..\Public\Documents\PSM\sample\Tutorial\TutoLib\TutoLib.csproj">
+      <Project>{0A29F05D-DB9F-4045-8F41-401F9FE31638}</Project>
+      <Name>TutoLib</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
