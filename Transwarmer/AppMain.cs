@@ -25,7 +25,7 @@ namespace Transwarmer
 
 		public static void Initialize ()
 		{
-			// Set up the graphics system
+			//test!! Set up the graphics system
 			graphics = new GraphicsContext ();
 		}
 
