@@ -23,6 +23,7 @@ namespace Transwarmer
 		public List<string> animationList = new List<string> ();
 		public bool isReviece = false;
 		public SpriteB sprite;
+		public bool isPlayed = false;
 		
 		private SpriteBuffer sbuffer;
 		private Texture2D texture;
@@ -106,12 +107,16 @@ namespace Transwarmer
 		{
 			if (!isReviece) {
 				currentTexture ++;
-				if (! (currentTexture < animationList.Count - 1)) {
+				isPlayed = ! (currentTexture < animationList.Count - 1);
+				
+				if ( isPlayed ) {
 					currentTexture = animationList.Count -1;
+					
 				}
 			} else {
 				currentTexture --;
-				if (currentTexture < 0)
+				isPlayed = (currentTexture < 0 );
+				if (isPlayed)
 					currentTexture = 0;
 			}
 		}

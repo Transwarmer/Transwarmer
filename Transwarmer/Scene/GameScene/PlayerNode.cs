@@ -34,14 +34,14 @@ namespace Transwarmer
 		public override void Update (float dt)
 		{
 			base.Update (dt);
-			position += 100.0f * dt;
 			cameraManager.OnPlayerPositionChanged (position);
-			
-			
 			
 			switch( Input.getState() )
 			{
 			case InputController.CharacterState.Shrink:
+				if( sprite.isPlayed == false){
+					position += 90.0f * dt;
+				}
 				sprite.isReviece = false;
 				break;
 			case InputController.CharacterState.Stretch:
