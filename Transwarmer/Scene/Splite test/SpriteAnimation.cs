@@ -20,14 +20,14 @@ namespace Transwarmer
 		}
 		
 		public AnimationType type = AnimationType.Pingpong;
-		
-		private static SpriteBuffer sbuffer;
+		public List<string> animationList = new List<string> ();
+		public bool isReviece = false;
 		public SpriteB sprite;
+		
+		private SpriteBuffer sbuffer;
 		private Texture2D texture;
 		private Dictionary<string, UnifiedTextureInfo> dicTextureInfo;
-		public List<string> animationList = new List<string> ();
 		private int currentTexture = 0;
-		bool isReviece = false;
 		
 		public SpriteAnimation (string pngFilePath, string xmlFilePath)
 		{

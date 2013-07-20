@@ -8,10 +8,14 @@ namespace Transwarmer
 	{
 		public float position;
 		public CameraManager cameraManager;
+		public InputController Input;
+		
+		private SpriteAnimation sprite;
 		
 		public PlayerNode ()
 		{
-			var sprite = new SpriteAnimation(
+			
+			sprite = new SpriteAnimation(
 				"Application/Assets/images/unified_texture.png", 
 				"Application/Assets/images/unified_texture.xml");
 			
@@ -19,6 +23,7 @@ namespace Transwarmer
 			this.position = 272;
 			sprite.Position = new Vector2(128, this.position);
 			sprite.SetRotation(90);
+			sprite.type = SpriteAnimation.AnimationType.Serial;
 			sprite.PlayAnimation();
 
 			AddChild(sprite);
@@ -31,6 +36,18 @@ namespace Transwarmer
 			base.Update (dt);
 			position += 100.0f * dt;
 			cameraManager.OnPlayerPositionChanged (position);
+			
+			
+			
+			switch( Input.getState() )
+			{
+			case InputController.CharacterState.Shrink:
+				sprite.isReviece = false;
+				break;
+			case InputController.CharacterState.Stretch:
+				sprite.isReviece = true;
+				break;
+			}
 		}
 	}
 }
