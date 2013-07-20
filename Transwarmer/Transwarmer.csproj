@@ -47,6 +47,7 @@
     <Compile Include="Scene\GameScene\FPSBenchmarkNode.cs" />
     <Compile Include="Scene\GameScene\InputController.cs" />
     <Compile Include="Scene\GameScene\CameraManager.cs" />
+    <Compile Include="Scene\GameScene\FireNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -79,7 +80,9 @@
     <Content Include="Assets\sound\flying_butterfly.mp3" />
     <Content Include="Assets\images\unified_fire.png" />
     <Content Include="Assets\title\title_logo.png" />
-    <Content Include="Assets\background\background.png" />
+    <Content Include="Assets\images\unified_fire.xml" />
+    <Content Include="Assets\sound\fire.mp3" />
+    <Content Include="Assets\images\haikei.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -89,6 +92,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\images\unified_Butterfly.xml" />
-    <None Include="Assets\images\unified_fire.xml" />
   </ItemGroup>
 </Project>

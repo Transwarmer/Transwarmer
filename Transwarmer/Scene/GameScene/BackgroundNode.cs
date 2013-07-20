@@ -24,6 +24,8 @@ namespace Transwarmer
 				sprites[i] = generateSprite(i * 800.0f, textureInfo);
 				AddChild (sprites[i]);
 			}
+			
+			
 		}
 		
 		private SpriteUV generateSprite (float leftX, TextureInfo textureInfo)
