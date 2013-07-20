@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Transwarmer\Scene\GameScene\BackgroundNode.cs">
     <Files>
       <File FileName="Transwarmer\AppMain.cs" Line="18" Column="4" />
-      <File FileName="Transwarmer\Scene\GameScene\BackgroundNode.cs" Line="7" Column="2" />
+      <File FileName="Transwarmer\Scene\GameScene\BackgroundNode.cs" Line="20" Column="4" />
       <File FileName="Transwarmer\app.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
