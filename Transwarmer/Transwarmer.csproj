@@ -42,8 +42,8 @@
     <Compile Include="Scene\GameScene\BackgroundNode.cs" />
     <Compile Include="Scene\GameScene\GameScene.cs" />
     <Compile Include="Scene\Splite test\Splite Scene Test.cs" />
-    <Compile Include="Scene\Splite test\SpliteAnimation.cs" />
     <Compile Include="Scene\GameScene\PlayerNode.cs" />
+    <Compile Include="Scene\Splite test\SpriteAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

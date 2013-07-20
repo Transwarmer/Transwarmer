@@ -1,16 +1,17 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Transwarmer\Scene\GameScene\BackgroundNode.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Transwarmer\Scene\Splite test\SpriteAnimation.cs">
     <Files>
-      <File FileName="Transwarmer\AppMain.cs" Line="18" Column="4" />
-      <File FileName="Transwarmer\Scene\GameScene\BackgroundNode.cs" Line="20" Column="4" />
-      <File FileName="Transwarmer\app.xml" Line="1" Column="1" />
+      <File FileName="Transwarmer\AppMain.cs" Line="16" Column="18" />
+      <File FileName="Transwarmer\Scene\GameScene\BackgroundNode.cs" Line="15" Column="56" />
+      <File FileName="Transwarmer\Scene\GameScene\PlayerNode.cs" Line="9" Column="4" />
+      <File FileName="Transwarmer\Scene\GameScene\GameScene.cs" Line="17" Column="1" />
+      <File FileName="Transwarmer\Scene\Splite test\Splite Scene Test.cs" Line="18" Column="5" />
+      <File FileName="Transwarmer\Scene\Splite test\SpriteAnimation.cs" Line="63" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\TyounanMOTI\develop\Transwarmer_studio\Transwarmer\Scene\GameScene\BackgroundNode.cs" line="19" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

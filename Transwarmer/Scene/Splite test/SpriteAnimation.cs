@@ -11,7 +11,7 @@ using Sce.PlayStation.HighLevel.GameEngine2D.Base;
   
 namespace Transwarmer
 {
-	public class SpliteAnimation : Node
+	public class SpriteAnimation : Node
 	{
 		
 		private static SpriteBuffer sbuffer;
@@ -27,7 +27,7 @@ namespace Transwarmer
 		
 		bool isReviece = false;
 		
-		public SpliteAnimation (string pngFilePath, string xmlFilePath)
+		public SpriteAnimation (string pngFilePath, string xmlFilePath)
 		{
 			texture = new Texture2D(pngFilePath, false);
 			dicTextureInfo = UnifiedTexture.GetDictionaryTextureInfo(xmlFilePath);

@@ -7,7 +7,7 @@ namespace Transwarmer
 	{
 		public PlayerNode ()
 		{
-			var sprite = new SpliteAnimation(
+			var sprite = new SpriteAnimation(
 				"Application/Assets/images/unified_texture.png", 
 				"Application/Assets/images/unified_texture.xml");
 			

@@ -3,19 +3,19 @@ using Sce.PlayStation.HighLevel.GameEngine2D;
 
 namespace Transwarmer
 { 
-	public class Splite_Scene_Test : Scene
+	public class Sprite_Scene_Test : Scene
 	{
-		public SpliteAnimation splite;
+		public SpriteAnimation sprite;
 		  
-		public Splite_Scene_Test ()
+		public Sprite_Scene_Test ()
 		{ 
-			splite = new SpliteAnimation(
+			sprite = new SpriteAnimation(
 				"Application/Assets/images/unified_texture.png", 
 				"Application/Assets/images/unified_texture.xml");
 			
-			AddChild( splite);
+			AddChild(sprite);
 			
-			splite.PlayAnimation(0.01f);
+			sprite.PlayAnimation(0.01f);
 		}
 	}
 }
