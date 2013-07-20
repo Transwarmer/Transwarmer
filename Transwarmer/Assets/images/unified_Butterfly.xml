@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0">
+  <info w="1024" h="512" />
+  <textures>
+    <texture filename="image/butterfly0007.png" x="0" y="0" w="128" h="128" />
+    <texture filename="image/butterfly0006.png" x="129" y="0" w="128" h="128" />
+    <texture filename="image/butterfly0008.png" x="258" y="0" w="128" h="128" />
+    <texture filename="image/butterfly0010.png" x="0" y="129" w="128" h="128" />
+    <texture filename="image/butterfly0009.png" x="129" y="129" w="128" h="128" />
+    <texture filename="image/butterfly0002.png" x="258" y="129" w="128" h="128" />
+    <texture filename="image/butterfly0001.png" x="0" y="258" w="128" h="128" />
+    <texture filename="image/butterfly0003.png" x="129" y="258" w="128" h="128" />
+    <texture filename="image/butterfly0005.png" x="258" y="258" w="128" h="128" />
+    <texture filename="image/butterfly0004.png" x="387" y="0" w="128" h="128" />
+  </textures>
+</root>
