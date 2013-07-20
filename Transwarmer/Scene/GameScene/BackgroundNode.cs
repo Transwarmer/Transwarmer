@@ -24,7 +24,7 @@ namespace Transwarmer
 			
 			spriteNext = new SpriteUV (textureInfo);
 			spriteNext.Quad.S = textureInfo.TextureSizef;
-			spriteNext.Quad.T = new Vector2(-960.0f, 0.0f);
+			spriteNext.Quad.T = new Vector2(960.0f, 0.0f);
 			
 			AddChild (spritePrev);
 			AddChild (spriteNext);

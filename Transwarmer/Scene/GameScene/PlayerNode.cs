@@ -7,6 +7,7 @@ namespace Transwarmer
 	public class PlayerNode : Node
 	{
 		public float position;
+		public CameraManager cameraManager;
 		
 		public PlayerNode ()
 		{
@@ -29,6 +30,7 @@ namespace Transwarmer
 		{
 			base.Update (dt);
 			position += 100.0f * dt;
+			cameraManager.OnPlayerPositionChanged (position);
 		}
 	}
 }

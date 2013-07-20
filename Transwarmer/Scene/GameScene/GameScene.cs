@@ -16,8 +16,8 @@ namespace Transwarmer
 			// output FPS benchmark to console
 			// Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
 			
-			playerNode = new PlayerNode ();
 			cameraManager = new CameraManager (this.Camera2D);
+			playerNode = new PlayerNode () {cameraManager = cameraManager};
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
 		}
