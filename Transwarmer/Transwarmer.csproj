@@ -48,4 +48,10 @@
     <PsmMetadata Include="app.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="GameScene\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\worm\" />
+    <Folder Include="Assets\butterfly\" />
+  </ItemGroup>
 </Project>
