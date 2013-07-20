@@ -19,11 +19,14 @@ namespace Transwarmer
 			InputController Input = new InputController();
 			Scheduler.Instance.ScheduleUpdateForTarget (Input, 2, false);
 			
+			var fireNode = new FireNode ();
+			Scheduler.Instance.ScheduleUpdateForTarget (fireNode, 2, false);
+			
 			cameraManager = new CameraManager (this.Camera2D);
 			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input};
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
-			AddChild (new FireNode ());
+			AddChild (fireNode);
 		}
 	}
 }

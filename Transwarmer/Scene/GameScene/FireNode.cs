@@ -1,5 +1,6 @@
 using System;
 using Sce.PlayStation.Core;
+using Sce.PlayStation.Core.Audio;
 using Sce.PlayStation.HighLevel.GameEngine2D;
 
 namespace Transwarmer
@@ -7,6 +8,8 @@ namespace Transwarmer
 	public class FireNode : Node
 	{
 		private SpriteAnimation sprite;
+		private Bgm fireBgm;
+		private BgmPlayer fireBgmPlayer;
 		
 		public FireNode ()
 		{
@@ -18,6 +21,11 @@ namespace Transwarmer
 			sprite.type = SpriteAnimation.AnimationType.Serial;
 			sprite.PlayAnimation();
 			AddChild(sprite);
+			
+			fireBgm = new Bgm ("/Application/Assets/sound/fire.mp3");
+			fireBgmPlayer = fireBgm.CreatePlayer();
+			fireBgmPlayer.Loop = true;
+			fireBgmPlayer.Play ();
 		}
 	}
 }

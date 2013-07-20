@@ -83,6 +83,7 @@
     <Content Include="Assets\images\haikei.png" />
     <Content Include="Assets\sound\material\hono2_trim_loop.wav" />
     <Content Include="Assets\images\unified_fire.xml" />
+    <Content Include="Assets\sound\fire.mp3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
