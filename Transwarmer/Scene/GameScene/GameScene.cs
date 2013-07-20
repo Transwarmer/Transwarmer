@@ -11,7 +11,8 @@ namespace Transwarmer
 			this.Camera.SetViewFromViewport ();
 			
 			Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
-			
+			Scheduler.Instance.ScheduleUpdateForTarget (new InputController(), 2, false);
+
 			AddChild (new BackgroundNode ());
 			AddChild (new PlayerNode ());
 		}
