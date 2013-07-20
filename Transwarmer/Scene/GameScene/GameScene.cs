@@ -6,15 +6,20 @@ namespace Transwarmer
 {
 	public class GameScene : Scene
 	{
+		private PlayerNode playerNode;
+		private CameraManager cameraManager;
+		
 		public GameScene ()
 		{
 			this.Camera.SetViewFromViewport ();
 			
-			Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
-			Scheduler.Instance.ScheduleUpdateForTarget (new InputController(), 2, false);
-
+			// output FPS benchmark to console
+			// Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
+			
+			playerNode = new PlayerNode ();
+			cameraManager = new CameraManager (this.Camera2D);
 			AddChild (new BackgroundNode ());
-			AddChild (new PlayerNode ());
+			AddChild (playerNode);
 		}
 	}
 }

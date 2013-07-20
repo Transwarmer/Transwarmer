@@ -1,4 +1,5 @@
 using System;
+using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Graphics;
 using Sce.PlayStation.HighLevel.GameEngine2D;
 using Sce.PlayStation.HighLevel.GameEngine2D.Base;
@@ -8,7 +9,8 @@ namespace Transwarmer
 	public class BackgroundNode : Node
 	{
 		Texture2D texture;
-		SpriteUV sprite;
+		SpriteUV spritePrev;
+		SpriteUV spriteNext;
 		
 		public BackgroundNode ()
 		{
@@ -16,10 +18,16 @@ namespace Transwarmer
 			
 			texture = new Texture2D ("/Application/Assets/background/dummy_fullscreen.png", false);
 			TextureInfo textureInfo = new TextureInfo (texture);
-			sprite = new SpriteUV (textureInfo);
-			sprite.Quad.S = textureInfo.TextureSizef;
 			
-			AddChild (sprite);
+			spritePrev = new SpriteUV (textureInfo);
+			spritePrev.Quad.S = textureInfo.TextureSizef;
+			
+			spriteNext = new SpriteUV (textureInfo);
+			spriteNext.Quad.S = textureInfo.TextureSizef;
+			spriteNext.Quad.T = new Vector2(-960.0f, 0.0f);
+			
+			AddChild (spritePrev);
+			AddChild (spriteNext);
 		}
 	}
 }
