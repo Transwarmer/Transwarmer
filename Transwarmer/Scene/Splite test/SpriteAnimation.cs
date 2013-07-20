@@ -13,6 +13,13 @@ namespace Transwarmer
 {
 	public class SpriteAnimation : Node
 	{
+		public enum AnimationType{
+			Pingpong,
+			Serial,
+			loop
+		}
+		
+		public AnimationType type = AnimationType.Pingpong;
 		
 		private static SpriteBuffer sbuffer;
 		public SpriteB sprite;
@@ -47,6 +54,42 @@ namespace Transwarmer
 		public override void Update (float dt)
 		{
 			base.Update (dt);
+
+			switch(type)
+			{
+			case AnimationType.loop:
+				Loop();
+				break;
+			case AnimationType.Pingpong:
+				PingPong();
+				break;
+			case AnimationType.Serial:
+				Serial();
+				break;
+			}
+			
+			var uti = dicTextureInfo [animationList [currentTexture]];
+			sprite.SetTextureInfo (uti);
+			
+			sprite.Position = new Vector3 (Position.X, Position.Y, 0);
+		}
+		
+		public void Loop()
+		{
+			if (!isReviece) {
+				currentTexture ++;
+				if (! (currentTexture < animationList.Count - 1)) {
+					currentTexture = 0;
+				}
+			} else {
+				currentTexture --;
+				if (currentTexture <= 0)
+					currentTexture = animationList.Count - 1;
+			}
+		}
+		
+		public void PingPong()
+		{
 			if (!isReviece) {
 				currentTexture ++;
 				if (! (currentTexture < animationList.Count - 1)) {
@@ -54,14 +97,23 @@ namespace Transwarmer
 				}
 			} else {
 				currentTexture --;
-				isReviece = !(animationList.Count < 0);
 				if (currentTexture <= 0)
 					isReviece = false;
 			}
-			var uti = dicTextureInfo [animationList [currentTexture]];
-			sprite.SetTextureInfo (uti);
-			
-			sprite.Position = new Vector3 (Position.X, Position.Y, 0);
+		}
+		
+		public void Serial()
+		{
+			if (!isReviece) {
+				currentTexture ++;
+				if (! (currentTexture < animationList.Count - 1)) {
+					currentTexture = animationList.Count -1;
+				}
+			} else {
+				currentTexture --;
+				if (currentTexture < 0)
+					currentTexture = 0;
+			}
 		}
 		
 		public void SetRotation(float angle)
