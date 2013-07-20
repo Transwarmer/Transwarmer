@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppMain.cs" />
+    <Compile Include="Scene\GameScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -49,9 +50,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="GameScene\" />
     <Folder Include="Assets\" />
     <Folder Include="Assets\worm\" />
     <Folder Include="Assets\butterfly\" />
+    <Folder Include="Scene\" />
   </ItemGroup>
 </Project>
