@@ -89,6 +89,7 @@
     <Content Include="Assets\Sample\worm_image2.png" />
     <Content Include="Assets\images\unified_fireleaf.png" />
     <Content Include="Assets\images\unified_fireB.png" />
+    <Content Include="Assets\images\dead_worm.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
