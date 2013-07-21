@@ -97,13 +97,15 @@ namespace Transwarmer
 			
 			AddChild (pupaSprite);
 			RemoveChild (warmSprite, true);
-			System.Console.WriteLine ("call");
+			System.Console.WriteLine ("transform!!!!!");
 		}
 		
 		private void Transforming ()
 		{
 			if (Input.getButtonCounter () > 5) {
 				System.Console.WriteLine ("clear");
+				
+				Director.Instance.ReplaceScene (new ClearScene());
 			}
 		}
 	}
