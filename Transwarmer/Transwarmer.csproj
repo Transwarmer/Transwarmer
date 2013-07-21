@@ -51,6 +51,7 @@
     <Compile Include="Scene\GameScene\StaticBackground.cs" />
     <Compile Include="Scene\ClearScene\ClearScene.cs" />
     <Compile Include="Scene\GameScene\ContactNode.cs" />
+    <Compile Include="Scene\ClearScene\TitleScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -99,6 +100,7 @@
     <Content Include="Assets\images\fireWall.png" />
     <Content Include="Assets\images\dead_scene.png" />
     <Content Include="Assets\images\unified_sanagi.png" />
+    <Content Include="Assets\images\unified_sanagi.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -110,6 +112,5 @@
     <None Include="Assets\images\unified_fireleaf.xml" />
     <None Include="Assets\background\dummy_fullscreen.png" />
     <None Include="Assets\sound\material\hono2.mp3" />
-    <None Include="Assets\images\unified_sanagi.xml" />
   </ItemGroup>
 </Project>

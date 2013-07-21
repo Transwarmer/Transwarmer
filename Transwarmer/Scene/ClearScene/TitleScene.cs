@@ -11,12 +11,12 @@ using Sce.PlayStation.HighLevel.GameEngine2D.Base;
 
 namespace Transwarmer
 {
-	public class ClearScene : Scene
+	public class TitleScene : Scene
 	{
 		
-		public ClearScene ()
+		public TitleScene ()
 		{
-			var texture = new Texture2D("Application/Assets/images/end_image.png", false);
+			var texture = new Texture2D("Application/Assets/images/dead_worm.png", false);
 			var textureInfo = new TextureInfo(texture);
 			
 			var sprite = new SpriteUV(){ TextureInfo = textureInfo};
@@ -34,9 +34,9 @@ namespace Transwarmer
 		{
 			base.Update (dt);
 			
-			if(  Input2.GamePad0.R.Down )
+			if( Input2.GamePad0.R.Down )
 			{
-				Director.Instance.ReplaceScene(new TitleScene());
+				Director.Instance.ReplaceScene(new GameScene());
 			}
 		}
 	}

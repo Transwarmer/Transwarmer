@@ -26,15 +26,15 @@ namespace Transwarmer
 			this.position = 272;
 			warmSprite.Position = new Vector2 (300, this.position);
 			warmSprite.SetRotation (90);
-			warmSprite.type = SpriteAnimation.AnimationType.Serial;
+			warmSprite.type e= SpriteAnimation.AnimationType.Serial;
 			warmSprite.PlayAnimation ();
 
 			AddChild (warmSprite);
 			
 						
 			pupaSprite = new SpriteAnimation (
-				"Application/Assets/images/unified_Butterfly.png", 
-				"Application/Assets/images/unified_Butterfly.xml");
+				"Application/Assets/images/unified_sanagi.png", 
+				"Application/Assets/images/unified_sanagi.xml");
 			
 			warmSprite.SetRotation (90);
 			
