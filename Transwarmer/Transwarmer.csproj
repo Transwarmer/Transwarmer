@@ -98,6 +98,7 @@
     <Content Include="Assets\images\end_image.png" />
     <Content Include="Assets\images\fireWall.png" />
     <Content Include="Assets\images\dead_scene.png" />
+    <Content Include="Assets\images\unified_sanagi.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -109,5 +110,6 @@
     <None Include="Assets\images\unified_fireleaf.xml" />
     <None Include="Assets\background\dummy_fullscreen.png" />
     <None Include="Assets\sound\material\hono2.mp3" />
+    <None Include="Assets\images\unified_sanagi.xml" />
   </ItemGroup>
 </Project>

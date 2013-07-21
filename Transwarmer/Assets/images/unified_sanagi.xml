@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0">
+  <info w="1024" h="512" />
+  <textures>
+    <texture filename="image/sanagi0002.png" x="0" y="0" w="256" h="256" />
+    <texture filename="image/sanagi0001.png" x="257" y="0" w="256" h="256" />
+    <texture filename="image/sanagi0000.png" x="514" y="0" w="256" h="256" />
+  </textures>
+</root>
