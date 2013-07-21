@@ -10,7 +10,7 @@ namespace Transwarmer
 		public CameraManager cameraManager;
 		public InputController Input;
 		public bool transformed = false;
-		private SpriteAnimation warmSprite;
+		public SpriteAnimation warmSprite;
 		private SpriteAnimation pupaSprite;
 		private float angle = 0;
 		

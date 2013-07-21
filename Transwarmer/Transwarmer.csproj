@@ -50,6 +50,7 @@
     <Compile Include="Scene\GameScene\FireNode.cs" />
     <Compile Include="Scene\GameScene\StaticBackground.cs" />
     <Compile Include="Scene\ClearScene\ClearScene.cs" />
+    <Compile Include="Scene\GameScene\ContactNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
