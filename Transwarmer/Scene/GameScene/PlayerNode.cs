@@ -26,7 +26,7 @@ namespace Transwarmer
 			this.position = 272;
 			warmSprite.Position = new Vector2 (300, this.position);
 			warmSprite.SetRotation (90);
-			warmSprite.type e= SpriteAnimation.AnimationType.Serial;
+			warmSprite.type = SpriteAnimation.AnimationType.Serial;
 			warmSprite.PlayAnimation ();
 
 			AddChild (warmSprite);
