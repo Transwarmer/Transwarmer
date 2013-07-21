@@ -33,6 +33,12 @@ namespace Transwarmer
 			AddChild(sprite);
 		}
 		
+		public override void OnExit ()
+		{
+			base.OnExit ();
+			fireBgmPlayer.Stop ();
+		}
+		
 		private void generateFirewallSprite ()
 		{
 			var texture = new Texture2D ("/Application/Assets/images/fireWall.png", false);

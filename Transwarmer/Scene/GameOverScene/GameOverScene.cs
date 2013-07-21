@@ -1,9 +1,13 @@
 using System;
+using System.Collections.Generic;
+
+using Sce.PlayStation.Core;
+using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Graphics;
 using Sce.PlayStation.Core.Input;
+using Tutorial.Utility;
 using Sce.PlayStation.HighLevel.GameEngine2D;
 using Sce.PlayStation.HighLevel.GameEngine2D.Base;
-
 namespace Transwarmer
 {
 	public class GameOverScene : Scene
@@ -19,18 +23,18 @@ namespace Transwarmer
 			
 			Camera = new Camera2D (Director.Instance.GL, Director.Instance.DrawHelpers);
 			Camera.SetViewFromViewport ();
-			
-			Scheduler.Instance.ScheduleUpdateForTarget (this, 3, false);
+
+			ScheduleUpdate(2);
 		}
 		
 		public override void Update (float dt)
 		{
 			base.Update (dt);
 			
-			var gamepad = GamePad.GetData(0);
-			if (
-			Director.Instance.ReplaceScene (new GameScene());
+			if(  Input2.GamePad0.R.Down )
+			{
+				Director.Instance.ReplaceScene(new TitleScene());
+			}
 		}
 	}
 }
-
