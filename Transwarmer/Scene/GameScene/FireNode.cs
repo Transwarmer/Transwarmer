@@ -67,7 +67,7 @@ namespace Transwarmer
 		
 		public void onPlayerPositionChanged (float playerPosition)
 		{
-			if (playerPosition < fireFrontLine) {
+			if (playerPosition < fireFrontLine - 100.0f) {
 				Console.WriteLine("dead!!");
 			}
 		}
