@@ -70,6 +70,7 @@ namespace Transwarmer
 		{
 			if (playerPosition < fireFrontLine - 100.0f) {
 				Console.WriteLine("dead!!");
+				Director.Instance.ReplaceScene( new GameOverScene() );
 			}
 		}
 	}

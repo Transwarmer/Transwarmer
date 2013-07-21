@@ -52,6 +52,7 @@
     <Compile Include="Scene\ClearScene\ClearScene.cs" />
     <Compile Include="Scene\GameScene\ContactNode.cs" />
     <Compile Include="Scene\ClearScene\TitleScene.cs" />
+    <Compile Include="Scene\GameOverScene\GameOverScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -76,6 +77,7 @@
     <Folder Include="Assets\title\" />
     <Folder Include="Assets\Font\" />
     <Folder Include="Scene\ClearScene\" />
+    <Folder Include="Scene\GameOverScene\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\images\unified_texture.png" />
