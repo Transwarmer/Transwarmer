@@ -87,6 +87,7 @@
     <Content Include="Assets\background\background.jpg" />
     <Content Include="Assets\Sample\worm_image1.png" />
     <Content Include="Assets\Sample\worm_image2.png" />
+    <Content Include="Assets\images\unified_fireleaf.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -96,5 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\images\unified_Butterfly.xml" />
+    <None Include="Assets\images\unified_fireleaf.xml" />
   </ItemGroup>
 </Project>

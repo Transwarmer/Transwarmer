@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0">
+  <info w="2048" h="1024" />
+  <textures>
+    <texture filename="image/fireleaf0007.png" x="0" y="0" w="256" h="256" />
+    <texture filename="image/fireleaf0006.png" x="257" y="0" w="256" h="256" />
+    <texture filename="image/fireleaf0008.png" x="514" y="0" w="256" h="256" />
+    <texture filename="image/fireleaf0010.png" x="0" y="257" w="256" h="256" />
+    <texture filename="image/fireleaf0009.png" x="257" y="257" w="256" h="256" />
+    <texture filename="image/fireleaf0002.png" x="514" y="257" w="256" h="256" />
+    <texture filename="image/fireleaf0001.png" x="0" y="514" w="256" h="256" />
+    <texture filename="image/fireleaf0003.png" x="257" y="514" w="256" h="256" />
+    <texture filename="image/fireleaf0005.png" x="514" y="514" w="256" h="256" />
+    <texture filename="image/fireleaf0004.png" x="771" y="0" w="256" h="256" />
+  </textures>
+</root>
