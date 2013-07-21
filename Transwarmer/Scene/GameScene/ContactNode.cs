@@ -33,12 +33,11 @@ namespace Transwarmer
 					Vector2 direction =  playerPosition - blockPosition;
 					direction = direction / direction.Length();
 					//playerNode.warmSprite.Position += direction;
-					playerNode.warmSprite.sprite.Position.X += direction.X;
-					playerNode.warmSprite.sprite.Position.Y += direction.Y;
+					playerNode.warmSprite.Position += direction;
 				}
-				Console.WriteLine("player:" + playerPosition.X + " " + playerPosition.Y);
-				Console.WriteLine("sprite:" + playerNode.warmSprite.sprite.Position.X + " " + playerNode.warmSprite.sprite.Position.Y);
-				//Console.WriteLine("distance:" + distance);
+				//Console.WriteLine("player:" + playerPosition.X + " " + playerPosition.Y);
+				//Console.WriteLine("sprite:" + playerNode.warmSprite.sprite.Position.X + " " + playerNode.warmSprite.sprite.Position.Y);
+				Console.WriteLine("distance:" + distance);
 			}
 		}
 	}
