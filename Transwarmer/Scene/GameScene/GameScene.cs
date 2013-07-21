@@ -24,7 +24,7 @@ namespace Transwarmer
 			var fireNode = new FireNode ();
 			Scheduler.Instance.ScheduleUpdateForTarget (fireNode, 2, false);
 			cameraManager = new CameraManager (this.Camera2D);
-			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input};
+			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input, fireNode = fireNode};
 
 			contactNode = new ContactNode () { cameraManager = cameraManager, playerNode = playerNode };
 

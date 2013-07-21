@@ -64,5 +64,12 @@ namespace Transwarmer
 			sprite.Position = new Vector2(fireFrontLine, 272);
 			firewallSprite.Quad.T = firewallSprite.Quad.T.Add (new Vector2 (30.0f*dt, 0.0f));
 		}
+		
+		public void onPlayerPositionChanged (float playerPosition)
+		{
+			if (playerPosition < fireFrontLine) {
+				Console.WriteLine("dead!!");
+			}
+		}
 	}
 }

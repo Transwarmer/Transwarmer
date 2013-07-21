@@ -14,6 +14,8 @@ namespace Transwarmer
 		private SpriteAnimation pupaSprite;
 		private float angle = 0;
 		
+		public FireNode fireNode;
+		
 		public PlayerNode ()
 		{
 			warmSprite = new SpriteAnimation (
@@ -53,6 +55,7 @@ namespace Transwarmer
 		private void MoveWorm (float dt)
 		{
 			cameraManager.OnPlayerPositionChanged (position);
+			fireNode.onPlayerPositionChanged (position);
 			DebugDrawTransform ();
 			
 			switch (Input.getState ()) {
