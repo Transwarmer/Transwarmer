@@ -93,6 +93,7 @@
     <Content Include="Assets\images\dead_worm.png" />
     <Content Include="Assets\images\unified_Butterfly.xml" />
     <Content Include="Assets\Font\game_clear.png" />
+    <Content Include="Assets\images\end_image.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
