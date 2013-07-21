@@ -104,6 +104,7 @@
     <Content Include="Assets\images\unified_sanagi.png" />
     <Content Include="Assets\images\unified_sanagi.xml" />
     <Content Include="Assets\images\title_image.png" />
+    <Content Include="Assets\images\fireleaf_one.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
