@@ -1,6 +1,8 @@
 using System;
-using Sce.PlayStation.HighLevel.GameEngine2D;
 using Sce.PlayStation.Core;
+using Sce.PlayStation.Core.Graphics;
+using Sce.PlayStation.HighLevel.GameEngine2D;
+using Sce.PlayStation.HighLevel.GameEngine2D.Base;
 
 namespace Transwarmer
 {
@@ -33,6 +35,24 @@ namespace Transwarmer
 			AddChild (playerNode);
 			AddChild (fireNode);
 			AddChild (contactNode);
+
+			// blockers
+			{
+				SpriteUV [] spriteBlock = new SpriteUV[10];
+				Texture2D texture;
+				TextureInfo textureInfo;
+				texture = new Texture2D ("/Application/Assets/images/fireleaf_one.png", false);
+				textureInfo = new TextureInfo (texture);
+
+				for(int i = 0; i < 5; i++){
+					spriteBlock[i] = new SpriteUV(textureInfo);
+					spriteBlock[i].Quad.S = textureInfo.TextureSizef;
+					spriteBlock[i].CenterSprite(new Vector2(0.65f, 0.5f));
+					spriteBlock[i].Position = new Vector2(contactNode.blockPosition[i].X, contactNode.blockPosition[i].Y);;
+					AddChild (spriteBlock[i]);
+
+				}
+			}
 			
 			ScheduleUpdate (0);
 		}
