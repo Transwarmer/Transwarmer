@@ -42,7 +42,8 @@ namespace Transwarmer
 		public override void Update (float dt)
 		{
 			base.Update (dt);
-			
+			fireFrontLine += 10.0f * dt;
+			sprite.Position = new Vector2(fireFrontLine, 272);
 		}
 	}
 }
