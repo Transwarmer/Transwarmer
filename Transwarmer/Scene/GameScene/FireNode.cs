@@ -17,6 +17,7 @@ namespace Transwarmer
 		
 		public float fireFrontLine = 0.0f;
 		private SpriteUV firewallSprite;
+		private float firewallSpeed = 10.0f;
 		
 		public FireNode ()
 		{	
@@ -60,9 +61,9 @@ namespace Transwarmer
 		public override void Update (float dt)
 		{
 			base.Update (dt);
-			fireFrontLine += 30.0f * dt;
+			fireFrontLine += firewallSpeed * dt;
 			sprite.Position = new Vector2(fireFrontLine, 272);
-			firewallSprite.Quad.T = firewallSprite.Quad.T.Add (new Vector2 (30.0f*dt, 0.0f));
+			firewallSprite.Quad.T = firewallSprite.Quad.T.Add (new Vector2 (firewallSpeed*dt, 0.0f));
 		}
 		
 		public void onPlayerPositionChanged (float playerPosition)
