@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0">
+  <info w="1024" h="1024" />
+  <textures>
+    <texture filename="image/fire0003.png" x="0" y="0" w="544" h="250" />
+    <texture filename="image/fire0004.png" x="0" y="251" w="544" h="250" />
+    <texture filename="image/fire0001.png" x="0" y="502" w="544" h="250" />
+    <texture filename="image/fire0002.png" x="0" y="753" w="544" h="250" />
+  </textures>
+</root>

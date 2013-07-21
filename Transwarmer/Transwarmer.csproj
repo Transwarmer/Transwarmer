@@ -99,5 +99,6 @@
   <ItemGroup>
     <None Include="Assets\images\unified_Butterfly.xml" />
     <None Include="Assets\images\unified_fireleaf.xml" />
+    <None Include="Assets\images\unified_fireB.xml" />
   </ItemGroup>
 </Project>
