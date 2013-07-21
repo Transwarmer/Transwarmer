@@ -9,8 +9,8 @@ namespace Transwarmer
 	public class FireNode : Node
 	{
 		private SpriteAnimation [] sprites;
-		private int spritesCount = 20;
-		private int spritesIndex = 0;
+		private int maxSprites = 5;
+		private int spritesCount;
 		private Bgm fireBgm;
 		private BgmPlayer fireBgmPlayer;
 		private float spriteWidth = 100.0f;
@@ -24,46 +24,23 @@ namespace Transwarmer
 			fireBgmPlayer.Loop = true;
 			fireBgmPlayer.Play ();
 			
-			sprites = new SpriteAnimation[spritesCount];
-			
 			//Scheduler.Instance.ScheduleUpdateForTarget (this, 2, false);
 			
-			sprites[0] = generateSprite(spriteWidth);
+			sprites = new SpriteAnimation[maxSprites];
+			generateSprite(spriteWidth, 0);
 			AddChild(sprites[0]);
+			spritesCount = 1;
 		}
 		
-		private SpriteAnimation generateSprite (float position)
+		private void generateSprite (float position, int index)
 		{
-			var sprite = new SpriteAnimation ("/Application/Assets/images/unified_fireB.png",
+			sprites[index] = new SpriteAnimation ("/Application/Assets/images/unified_fireB.png",
 			                              "Application/Assets/images/unified_fireB.xml");
-			sprite.sprite.Center = new Sce.PlayStation.Core.Vector2(0.5f, 0.5f);
-			sprite.Position = new Vector2(position, 272);
-			sprite.SetRotation(90);
-			sprite.type = SpriteAnimation.AnimationType.Pingpong;
-			sprite.PlayAnimation();
-			return sprite;
-		}
-		
-		public override void Update (float dt)
-		{
-			base.Update (dt);
-			
-			float fireCount = fireFrontLine / spriteWidth;
-			if (fireCount > spritesIndex) {
-				RemoveChild(sprites[spritesIndex], false);
-				spritesIndex--;
-				if (spritesIndex < 0) {
-					spritesIndex = 0;
-				}
-			} else if (fireCount < spritesCount) {
-				spritesIndex++;
-				if (spritesIndex < spritesCount) {
-					sprites[spritesIndex] = generateSprite(spriteWidth);
-					AddChild (sprites[spritesIndex]);
-				} else {
-					spritesIndex = spritesCount - 1;
-				}
-			}
+			sprites[index].sprite.Center = new Sce.PlayStation.Core.Vector2(0.5f, 0.5f);
+			sprites[index].Position = new Vector2(position, 272);
+			sprites[index].SetRotation(90);
+			sprites[index].type = SpriteAnimation.AnimationType.Pingpong;
+			sprites[index].PlayAnimation();
 		}
 	}
 }
