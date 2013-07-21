@@ -101,6 +101,7 @@
     <Content Include="Assets\images\dead_scene.png" />
     <Content Include="Assets\images\unified_sanagi.png" />
     <Content Include="Assets\images\unified_sanagi.xml" />
+    <Content Include="Assets\images\title_image.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
