@@ -97,6 +97,7 @@
     <Content Include="Assets\Font\game_clear.png" />
     <Content Include="Assets\images\end_image.png" />
     <Content Include="Assets\images\fireWall.png" />
+    <Content Include="Assets\images\dead_scene.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
