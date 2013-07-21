@@ -35,8 +35,9 @@ namespace Transwarmer
 			base.Update (dt);
 			//playerPosition.X = playerNode.sprite.Position.X;
 			//playerPosition.Y = cameraManager.getCameraPosition();
+			playerPosition = playerNode.warmSprite.Position;
 			playerPosition.X = cameraManager.getCameraPosition() + 600.0f;
-			playerPosition.Y = playerNode.warmSprite.sprite.Position.Y;
+			//playerPosition.Y = playerNode.warmSprite.Position.Y;
 			for(int i = 0; i < 5; i++){
 				Vector2 disvec = playerPosition - blockPosition[i];
 				float distance = disvec.Length();//playerPosition.Distance(blockPosition);
