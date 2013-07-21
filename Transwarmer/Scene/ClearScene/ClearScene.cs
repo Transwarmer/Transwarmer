@@ -34,7 +34,7 @@ namespace Transwarmer
 		{
 			base.Update (dt);
 			
-			if(  Input2.GamePad0.R.Down )
+			if(  Input2.GamePad0.Start.Down )
 			{
 				Director.Instance.ReplaceScene(new TitleScene());
 			}
