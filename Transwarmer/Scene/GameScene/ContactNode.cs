@@ -10,7 +10,7 @@ namespace Transwarmer
 		public PlayerNode playerNode;
 		public CameraManager cameraManager;
 
-		public Vector2 blockPosition = new Vector2(500, 200);
+		public Vector2 blockPosition = new Vector2(500, 250);
 		public const float blockR = 64.0f;
 		public const float playerR = 64.0f;
 
