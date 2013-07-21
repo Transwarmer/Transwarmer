@@ -73,11 +73,9 @@
     <Folder Include="Assets\title\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\background\dummy_fullscreen.png" />
     <Content Include="Assets\images\unified_texture.png" />
     <Content Include="Assets\images\unified_texture.xml" />
     <Content Include="Assets\images\unified_Butterfly.png" />
-    <Content Include="Assets\sound\material\hono2.mp3" />
     <Content Include="Assets\sound\flying_butterfly.mp3" />
     <Content Include="Assets\images\unified_fire.png" />
     <Content Include="Assets\title\title_logo.png" />
@@ -90,6 +88,7 @@
     <Content Include="Assets\images\unified_fireleaf.png" />
     <Content Include="Assets\images\unified_fireB.png" />
     <Content Include="Assets\images\dead_worm.png" />
+    <Content Include="Assets\images\unified_fireB.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -100,6 +99,7 @@
   <ItemGroup>
     <None Include="Assets\images\unified_Butterfly.xml" />
     <None Include="Assets\images\unified_fireleaf.xml" />
-    <None Include="Assets\images\unified_fireB.xml" />
+    <None Include="Assets\background\dummy_fullscreen.png" />
+    <None Include="Assets\sound\material\hono2.mp3" />
   </ItemGroup>
 </Project>
