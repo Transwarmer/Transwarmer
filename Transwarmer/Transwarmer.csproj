@@ -90,6 +90,7 @@
     <Content Include="Assets\images\unified_fireleaf.png" />
     <Content Include="Assets\images\unified_fireB.png" />
     <Content Include="Assets\images\dead_worm.png" />
+    <Content Include="Assets\images\unified_Butterfly.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -98,7 +99,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\images\unified_Butterfly.xml" />
     <None Include="Assets\images\unified_fireleaf.xml" />
     <None Include="Assets\images\unified_fireB.xml" />
   </ItemGroup>
