@@ -9,6 +9,7 @@ namespace Transwarmer
 		private PlayerNode playerNode = null;
 		private CameraManager cameraManager = null;
 		private InputController Input = null;
+		private ContactNode contactNode;
 		
 		public GameScene ()
 		{
@@ -22,13 +23,16 @@ namespace Transwarmer
 			
 			var fireNode = new FireNode ();
 			Scheduler.Instance.ScheduleUpdateForTarget (fireNode, 2, false);
-			
 			cameraManager = new CameraManager (this.Camera2D);
 			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input};
+
+			contactNode = new ContactNode () { cameraManager = cameraManager, playerNode = playerNode };
+
 			AddChild (new StaticBackground ());
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
 			AddChild (fireNode);
+			AddChild (contactNode);
 			
 			ScheduleUpdate (0);
 		}
