@@ -85,6 +85,8 @@
     <Content Include="Assets\sound\fire.mp3" />
     <Content Include="Assets\images\haikei.png" />
     <Content Include="Assets\background\background.jpg" />
+    <Content Include="Assets\Sample\worm_image1.png" />
+    <Content Include="Assets\Sample\worm_image2.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
