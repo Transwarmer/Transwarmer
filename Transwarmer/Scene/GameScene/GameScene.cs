@@ -6,8 +6,9 @@ namespace Transwarmer
 {
 	public class GameScene : Scene
 	{
-		private PlayerNode playerNode;
-		private CameraManager cameraManager;
+		private PlayerNode playerNode = null;
+		private CameraManager cameraManager = null;
+		private InputController Input = null;
 		
 		public GameScene ()
 		{
@@ -16,7 +17,7 @@ namespace Transwarmer
 			// output FPS benchmark to console
 			// Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
 			
-			InputController Input = new InputController();
+			Input = new InputController ();
 			Scheduler.Instance.ScheduleUpdateForTarget (Input, 2, false);
 			
 			var fireNode = new FireNode ();
@@ -28,6 +29,18 @@ namespace Transwarmer
 			AddChild (new BackgroundNode ());
 			AddChild (playerNode);
 			AddChild (fireNode);
+			
+			ScheduleUpdate (0);
 		}
+
+		public override void Update (float dt)
+		{
+			base.Update (dt);
+			
+			if (Input.getButtonCounter () > 0) {
+				playerNode.TransformationStart ();
+			}
+		}
+		
 	}
 }

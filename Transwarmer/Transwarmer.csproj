@@ -49,6 +49,7 @@
     <Compile Include="Scene\GameScene\CameraManager.cs" />
     <Compile Include="Scene\GameScene\FireNode.cs" />
     <Compile Include="Scene\GameScene\StaticBackground.cs" />
+    <Compile Include="Scene\ClearScene\ClearScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -71,6 +72,8 @@
     <Folder Include="Assets\sound\" />
     <Folder Include="Assets\sound\material\" />
     <Folder Include="Assets\title\" />
+    <Folder Include="Assets\Font\" />
+    <Folder Include="Scene\ClearScene\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\images\unified_texture.png" />
@@ -89,6 +92,9 @@
     <Content Include="Assets\images\unified_fireB.png" />
     <Content Include="Assets\images\dead_worm.png" />
     <Content Include="Assets\images\unified_fireB.xml" />
+    <Content Include="Assets\images\unified_Butterfly.xml" />
+    <Content Include="Assets\Font\game_clear.png" />
+    <Content Include="Assets\images\end_image.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TutoLib\TutoLib.csproj">
@@ -97,7 +103,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\images\unified_Butterfly.xml" />
     <None Include="Assets\images\unified_fireleaf.xml" />
     <None Include="Assets\background\dummy_fullscreen.png" />
     <None Include="Assets\sound\material\hono2.mp3" />
