@@ -13,20 +13,17 @@ namespace Transwarmer
 {
 	public class TitleScene : Scene
 	{
-		
 		public TitleScene ()
 		{
-			var texture = new Texture2D("Application/Assets/images/dead_worm.png", false);
+			var texture = new Texture2D("Application/Assets/images/title_image.png", false);
 			var textureInfo = new TextureInfo(texture);
 			
 			var sprite = new SpriteUV(){ TextureInfo = textureInfo};
 			
 			sprite.Quad.S = new Vector2(30,18);
-			
 			sprite.CenterSprite(new Vector2(0.5f,0.5f));
 			
 			AddChild(sprite);
-			
 			ScheduleUpdate(2);
 		}
 		
@@ -36,7 +33,9 @@ namespace Transwarmer
 			
 			if( Input2.GamePad0.R.Down )
 			{
+				UnscheduleUpdate();
 				Director.Instance.ReplaceScene(new GameScene());
+				
 			}
 		}
 	}
