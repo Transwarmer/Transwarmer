@@ -18,14 +18,27 @@ namespace Transwarmer
 			var texture = new Texture2D("Application/Assets/images/title_image.png", false);
 			var textureInfo = new TextureInfo(texture);
 			this.RegisterDisposeOnExit (textureInfo);
-			
 			var sprite = new SpriteUV(){ TextureInfo = textureInfo};
+			sprite.Quad.S = textureInfo.TextureSizef;
 			
-			sprite.Quad.S = new Vector2(30,18);
-			sprite.CenterSprite(new Vector2(0.5f,0.5f));
-			
+			Camera = new Camera2D (Director.Instance.GL, Director.Instance.DrawHelpers);
+			Camera.SetViewFromViewport ();
+
 			AddChild(sprite);
 			ScheduleUpdate(2);
+			
+			// for test; fireWall and fireleaf_one become noise. other images are not.
+			//generateFireleafSprite();
+		}
+		
+		private void generateFireleafSprite ()
+		{
+			var texture = new Texture2D ("/Application/Assets/images/fireleaf_one.png", false);
+			var textureInfo = new TextureInfo (texture);
+			this.RegisterDisposeOnExit (textureInfo);
+			var sprite = new SpriteUV (textureInfo);
+			sprite.Quad.S = textureInfo.TextureSizef;
+			AddChild (sprite);
 		}
 		
 		public override void Update (float dt)
