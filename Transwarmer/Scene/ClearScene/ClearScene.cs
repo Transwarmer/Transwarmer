@@ -18,6 +18,7 @@ namespace Transwarmer
 		{
 			var texture = new Texture2D("Application/Assets/images/end_image.png", false);
 			var textureInfo = new TextureInfo(texture);
+			this.RegisterDisposeOnExit (textureInfo);
 			
 			var sprite = new SpriteUV(){ TextureInfo = textureInfo};
 			

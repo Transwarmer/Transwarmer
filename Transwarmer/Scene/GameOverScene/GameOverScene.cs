@@ -16,6 +16,7 @@ namespace Transwarmer
 		{
 			var texture = new Texture2D ("/Application/Assets/images/dead_scene.png", false);
 			var textureInfo = new TextureInfo (texture);
+			RegisterDisposeOnExit (textureInfo);
 			var sprite = new SpriteUV (textureInfo);
 			sprite.Quad.S = textureInfo.TextureSizef;
 			

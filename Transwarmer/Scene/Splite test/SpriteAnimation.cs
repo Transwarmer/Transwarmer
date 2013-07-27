@@ -33,6 +33,7 @@ namespace Transwarmer
 		public SpriteAnimation (string pngFilePath, string xmlFilePath)
 		{
 			texture = new Texture2D (pngFilePath, false);
+			this.RegisterDisposeOnExit (texture);
 			dicTextureInfo = UnifiedTexture.GetDictionaryTextureInfo (xmlFilePath);
 			
 			sbuffer = new SpriteBuffer (Director.Instance.GL.Context, dicTextureInfo.Count);

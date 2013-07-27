@@ -23,6 +23,9 @@ namespace Transwarmer
 		{	
 			fireBgm = new Bgm ("/Application/Assets/sound/fire.mp3");
 			fireBgmPlayer = fireBgm.CreatePlayer();
+			this.RegisterDisposeOnExit (fireBgm);
+			this.RegisterDisposeOnExit (fireBgmPlayer);
+			
 			fireBgmPlayer.Loop = true;
 			fireBgmPlayer.Play ();
 			
@@ -36,13 +39,14 @@ namespace Transwarmer
 		public override void OnExit ()
 		{
 			base.OnExit ();
-			fireBgmPlayer.Stop ();
 		}
 		
 		private void generateFirewallSprite ()
 		{
 			var texture = new Texture2D ("/Application/Assets/images/fireWall.png", false);
 			var textureInfo = new TextureInfo (texture);
+			this.RegisterDisposeOnExit (textureInfo);
+			
 			firewallSprite = new SpriteUV (textureInfo);
 			float spriteWidth = 500.0f;
 			float screenHeight = 544.0f;

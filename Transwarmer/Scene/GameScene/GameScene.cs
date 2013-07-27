@@ -43,6 +43,7 @@ namespace Transwarmer
 				TextureInfo textureInfo;
 				texture = new Texture2D ("/Application/Assets/images/fireleaf_one.png", false);
 				textureInfo = new TextureInfo (texture);
+				this.RegisterDisposeOnExit (textureInfo);
 
 				for(int i = 0; i < 5; i++){
 					spriteBlock[i] = new SpriteUV(textureInfo);

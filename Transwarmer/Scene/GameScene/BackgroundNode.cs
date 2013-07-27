@@ -20,6 +20,7 @@ namespace Transwarmer
 		{
 			texture = new Texture2D ("/Application/Assets/images/haikei.png", false);
 			textureInfo = new TextureInfo (texture);
+			this.RegisterDisposeOnExit (textureInfo);
 			
 			// fill screen with tree
 			spriteRing = new SpriteUV[ringCount];

@@ -11,6 +11,7 @@ namespace Transwarmer
 		{
 			var texture = new Texture2D ("/Application/Assets/background/background.jpg", false);
 			var textureInfo = new TextureInfo (texture);
+			this.RegisterDisposeOnExit (textureInfo);
 			var sprite = new SpriteUV (textureInfo);
 			sprite.Quad.S = textureInfo.TextureSizef;
 			
