@@ -27,6 +27,11 @@ namespace Transwarmer
 		private int	button_counter = 0;
 		private GamePadButtons pre_buttons;
 		
+		public InputController ()
+		{
+			ScheduleUpdate();
+		}
+		
 		public int getButtonCounter ()
 		{
 			return button_counter;

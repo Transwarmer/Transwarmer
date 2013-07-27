@@ -28,17 +28,12 @@ namespace Transwarmer
 			
 			fireBgmPlayer.Loop = true;
 			fireBgmPlayer.Play ();
-			
-			Scheduler.Instance.ScheduleUpdateForTarget (this, 2, false);
-			
+						
 			generateFirewallSprite ();
 			generateSprite(spriteWidth, 0);
 			AddChild(sprite);
-		}
-		
-		public override void OnExit ()
-		{
-			base.OnExit ();
+			
+			ScheduleUpdate();
 		}
 		
 		private void generateFirewallSprite ()

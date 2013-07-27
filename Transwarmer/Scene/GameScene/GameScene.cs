@@ -21,12 +21,9 @@ namespace Transwarmer
 			// Scheduler.Instance.ScheduleUpdateForTarget (new FPSBenchmarkNode(), 2, false);
 			
 			Input = new InputController ();
-			Scheduler.Instance.ScheduleUpdateForTarget (Input, 2, false);
-			
 			var fireNode = new FireNode ();
 			cameraManager = new CameraManager (this.Camera2D);
 			playerNode = new PlayerNode () {cameraManager = cameraManager, Input = Input, fireNode = fireNode};
-
 			contactNode = new ContactNode () { cameraManager = cameraManager, playerNode = playerNode };
 
 			AddChild (new StaticBackground ());
@@ -34,6 +31,7 @@ namespace Transwarmer
 			AddChild (playerNode);
 			AddChild (fireNode);
 			AddChild (contactNode);
+			AddChild (Input);
 
 			// blockers
 			{
@@ -54,7 +52,7 @@ namespace Transwarmer
 				}
 			}
 			
-			ScheduleUpdate (0);
+			ScheduleUpdate ();
 		}
 
 		public override void Update (float dt)
