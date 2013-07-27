@@ -14,9 +14,9 @@ namespace Transwarmer
 		public static void Main (string[] args)
 		{
 			Initialize ();
-			var gameScene = new TitleScene();
+			var initialScene = new TitleScene();
 			
-			Director.Instance.RunWithScene (gameScene);
+			Director.Instance.RunWithScene (initialScene);
 		}
 		
 		public static void Initialize ()
