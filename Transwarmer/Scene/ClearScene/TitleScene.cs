@@ -32,7 +32,7 @@ namespace Transwarmer
 		{
 			base.Update (dt);
 			
-			if( Input2.GamePad0.Start.Down )
+			if( Input2.GamePad0.Start.Release )
 			{
 				UnscheduleUpdate();
 				Director.Instance.ReplaceScene(new GameScene());
