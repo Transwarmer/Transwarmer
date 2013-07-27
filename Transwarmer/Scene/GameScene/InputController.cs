@@ -16,17 +16,16 @@ namespace Transwarmer
 			Fly
 		};
 
-		// シーン遷移用
 		private const int morph_counter = 50;
 		private const int clear_counter = 200;
-		private static float charge_time_top = 0.0f;
-		private static float charge_time_bottom = 0.0f;
-		private static float positionX = 100.0f;
-		private static float positionY = 100.0f;
-		private static int	bestStep = 50;
-		private static CharacterState state = CharacterState.None;
-		private static int	button_counter = 0;
-		private static GamePadButtons pre_buttons;
+		private float charge_time_top = 0.0f;
+		private float charge_time_bottom = 0.0f;
+		private float positionX = 100.0f;
+		private float positionY = 100.0f;
+		private int	bestStep = 50;
+		private CharacterState state = CharacterState.None;
+		private int	button_counter = 0;
+		private GamePadButtons pre_buttons;
 		
 		public int getButtonCounter ()
 		{
